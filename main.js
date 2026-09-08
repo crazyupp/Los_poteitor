@@ -74,7 +74,7 @@ function renderCart() {
   cartList.innerHTML = '';
 
   if (productNames.length === 0) {
-    cartList.innerHTML = `<div class="empty-cart"><span class="empty-icon">🥔</span><p>Nenhum produto selecionado.</p></div>`;
+    cartList.innerHTML = `<div class="empty-cart"><span class="empty-icon"><i class="fa-solid fa-bowl-food"></i></span><p>Nenhum produto selecionado.</p></div>`;
   } else {
     productNames.forEach((product) => {
       const quantity = cartItems.get(product) ?? 0;
